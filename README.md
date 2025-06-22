@@ -1,27 +1,29 @@
-# Online Shop Backend
+# Online Shop Backend API
 
-## Setup
+A minimalistic backend web application for an online shop with CRUD operations for customers, categories, items, and orders.
 
-1. Install dependencies:
-   ```
-   npm install
-   ```
+## Technologies Used
 
-2. Start the server:
-   ```
-   npm start
-   ```
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- Jest and Supertest for testing
 
-3. Run tests:
-   ```
-   npm test
-   ```
+## Data Entities
 
-## API Endpoints
+- **Customer**: ID, Name, Surname, Email
+- **ShopItemCategory**: ID, Title, Description
+- **ShopItem**: ID, Title, Description, Price, Categories
+- **OrderItem**: ID, ShopItem, Quantity
+- **Order**: ID, Customer, Items (list of OrderItems), Total Amount, Status
 
-- `/customers`
-- `/categories`
-- `/items`
-- `/orders`
+## Setup Instructions
 
-Each supports standard CRUD operations.
+### Prerequisites
+
+- Node.js (v14 or higher)
+- MongoDB (local installation or MongoDB Atlas)
+
+### Installation
+
+1. Clone the repository:
