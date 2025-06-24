@@ -1,0 +1,69 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "surname": "Smith",
+      "email": "alice@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "surname": "Brown",
+      "email": "bob@example.com"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Electronics",
+      "description": "Electronic items"
+    },
+    {
+      "id": 2,
+      "title": "Books",
+      "description": "Books and magazines"
+    }
+  ],
+  "shopItems": [
+    {
+      "id": 1,
+      "title": "Laptop",
+      "description": "A fast laptop",
+      "price": 999.99,
+      "category": [
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Novel",
+      "description": "A mystery novel",
+      "price": 19.99,
+      "category": [
+        2
+      ]
+    }
+  ],
+  "orderItems": [
+    {
+      "id": 1,
+      "shopItem": 1,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "shopItem": 2,
+      "quantity": 2
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer": 1,
+      "items": [
+        1
+      ]
+    }
+  ]
+}
